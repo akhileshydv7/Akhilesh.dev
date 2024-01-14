@@ -1,0 +1,1 @@
+export const wave_img = "https://www.stefantopalovic.com/static/media/waving.1bae5fcfb51082b5c2b4.png";

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 20;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    h3{
+        margin-left: 48px;
+        cursor: pointer;
+        font-size: larger;
+    }
+    .header-side-links{
+        font-weight: 500;
+        margin-right: 60px;
+        font-size: large;
+        // transition: all 3s ease-in-out;
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgba(15, 129, 223, 0.826);
+        }
+    }
+}
+
+.hero{
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+
+    .left-section{
+        margin-top: 3rem;
+        h1{
+            font-size: 3.5rem;
+            color: rgb(52, 51, 51);
+        }
+
+        .h1{
+            position: absolute;
+        }
+
+        .h2{
+            margin-top: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        img{
+            // padding-top: px;
+            width: 60px;
+            height: 60px;
+        }
+
+        p{
+            font-size: 1.1rem;
+            color: rgb(107, 105, 105);
+        }
+
+        .social-links{
+
+        }
+
+        ul {
+            display: flex;
+            position: absolute;
+            top: 79%;
+            left: 17%;
+            transform: translate(-50%, -50%);
+          }
+
+          ul li {
+            list-style: none;
+          }
+
+          ul li a {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            margin: 0 10px;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #fff;
+            z-index: 1;
+          }
+
+          ul li a .icon {
+            position: relative;
+            color: #262626;
+            transition: .5s;
+            z-index: 3;
+          }
+
+          ul li a:hover .icon {
+            color: #fff;
+            transform: rotateY(360deg);
+          }
+
+          ul li a:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f00;
+            transition: .5s;
+            z-index: 2;
+          }
+
+          ul li a:hover:before {
+            top: 0;
+          }
+
+          ul li:nth-child(1) a:before{
+            background: #0077b5;
+          }
+          
+          ul li:nth-child(2) a:before{
+            background: #dd4b39;
+          }
+    }
+
+    .right-section{
+        margin-top: 1rem;
+        position: relative;
+        width: 350px;
+        height: 350px;
+        background: rgba(0, 0, 0, 0);
+        transform: scale(0.8);
+        transition: 0.5s;
+        // cursor: pointer;
+        img {
+            position: absolute;
+            width: 100%;
+            transition: 0.5s;
+          }          
+    }
+}
+
+.right-section:hover img:nth-child(3) {
+    transform: translate(120px, -120px);
+    opacity: 1;
+  }
+  .right-section:hover img:nth-child(2) {
+    transform: translate(100px, -100px);
+    opacity: 0.8;
+  }
+  .right-section:hover img:nth-child(1) {
+    transform: translate(80px, -80px);
+    opacity: 0.6;
+  }
+//   .right-section:hover img:nth-child(1) {
+//     transform: translate(40px, -40px);
+//     opacity: 0.4;
+//   }
+
+.about{
+    min-height: 100vh;
+
+}
+
+.project{
+    min-height: 100vh;
+
+}
+
+.contact{
+    min-height: 100vh;
+
+}
