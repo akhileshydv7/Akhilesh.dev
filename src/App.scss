@@ -7,6 +7,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -35,7 +40,7 @@
         a{
             cursor: pointer;
             text-decoration: none;
-            color: black;
+            color: rgb(50, 49, 49);
             transition: color 0.5s;
         }
         a:hover{
@@ -43,6 +48,13 @@
         }
     }
 }
+
+
+
+
+
+
+
 
 .hero{
     background-color: #f9f9f9;
@@ -120,13 +132,16 @@
           ul li {
             list-style: none;
           }
+          a{
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+          }
 
           ul li a {
             width: 50px;
             height: 50px;
             background-color: #fff;
             text-align: center;
-            line-height: 50px;
+            line-height: 45px;
             font-size: 20px;
             margin: 0 10px;
             display: block;
@@ -183,6 +198,11 @@
           }          
     }
 }
+
+
+
+
+
   
   // .tech{
   //   margin: 3.5rem 0 4rem 10rem ;
@@ -194,10 +214,17 @@
   //   }
   // }
   
-  .about{
-    
+
+
+
+
+
+
+
+
+.about{  
     margin: 6.5rem 0 9rem 0 ;
-}
+
 .about-down-secton{
   display: flex;
   justify-content: center;
@@ -261,18 +288,66 @@
     width: 540px;
   }
 }
-.project{
-    min-height: 100vh;
-    background-color: #f9f9f9;
-    padding: 5rem 0 6.5rem 25%;
+}
 
-    h4{
-      font-size: 17px;
+
+
+
+
+
+.project{
+    background-color: #f9f9f9;
+    padding-bottom: 4rem;
+    
+    .project-header{
+      padding: 6rem 0 0rem 9rem;
+      font-size: 19px;
       color: rgb(28, 133, 231);
     }
-  }
+    .project-line{
+      padding: 0rem 0 0rem 9rem;
+      margin: 8px 0 2rem 0;
+      color: rgb(58, 57, 57);
+    }
+
+    .project-1{
+      display: flex;
+      gap: 4rem;
+      // background-color: white;
+      justify-content: center;
+      margin: auto;
+      width: fit-content;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 3px 2px -2px rgb(0 0 0 / 0.1);
+      img{
+        width: 350px;
+        height: 350px;
+      }
+      
+      .project-1-text-part{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        p{
+          width: 300px;
+        }
+
+      }
+
+
+    }
+}
   
-  .contact{
+
+
+
+
+
+.contact{
     padding: 5rem 0 6.5rem 9rem;
     h4{
       font-size: 17px;
@@ -310,7 +385,7 @@
         span{
           padding: 0.9rem 1.3rem;
           border-radius: 50%;
-          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
           color: rgb(28, 133, 231);
         }
       }
@@ -321,12 +396,19 @@
         span{
           padding: 0.9rem 1.1rem;
           border-radius: 50%;
-          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
           color: rgb(28, 133, 231);
         }
       }
   }
 }
+
+
+
+
+
+
+
 .footer{
   background-color: rgb(42, 42, 42);
   height: 150px;
@@ -387,6 +469,15 @@
 }
 
 }
+
+
+
+
+
+
+
+
+
 
 
 ::-webkit-scrollbar-track
