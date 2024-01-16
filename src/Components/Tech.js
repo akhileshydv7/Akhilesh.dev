@@ -2,7 +2,9 @@ import React from 'react'
 
 const Tech = () => {
     return (
-        <div>Tech</div>
+        <div className='tech'>
+            <p>Tech Stack</p>
+        </div>
     )
 }
 
