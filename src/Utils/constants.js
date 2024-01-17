@@ -7,3 +7,12 @@ export const MAIL = "mailto:akhileshyadav26620@gmail.com";
 export const Linkedin_LINK = "https://www.linkedin.com/in/akhileshyadav26/";
 
 export const Github_LINK = "https://github.com/akhileshydv7";
+
+export const NetflixGPT_Code = "https://github.com/akhileshydv7/netflix-gpt";
+
+export const NetflixGPT_Live = "https://netfliixx-gpt.netlify.app/";
+
+export const EatAndBite_Code = "https://github.com/akhileshydv7/EatandBite";
+
+export const EatAndBite_Live = "https://eatandbite.netlify.app/";
+

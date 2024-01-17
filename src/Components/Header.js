@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-scroll';
 
 const Header = () => {
     return (
@@ -6,10 +6,26 @@ const Header = () => {
             <h3>Akhilesh.dev</h3>
             <div className="header-side-links">
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <Link to="hero" spy={true} smooth={true} offset={0} duration={1000}>
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="about" spy={true} smooth={true} offset={-130} duration={800}>
+                            About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="project" spy={true} smooth={true} offset={10} duration={800}>
+                            Project
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="contact" spy={true} smooth={true} offset={50} duration={1000}>
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </div>
