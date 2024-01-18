@@ -26,7 +26,7 @@ const Project = () => {
                         </div>
                         <div className='project-1-code-demo'>
                             <a href={NetflixGPT_Code} target="blank">Code <i className="fab fa-github icon"></i></a>
-                            <a href={NetflixGPT_Live} target="blank">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href={NetflixGPT_Live} target="blank">Live Demo <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ const Project = () => {
                         </div>
                         <div className='project-2-code-demo'>
                             <a href={EatAndBite_Code} target="blank">Code <i className="fab fa-github icon"></i></a>
-                            <a href={EatAndBite_Live} target="blank">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href={EatAndBite_Live} target="blank">Live Demo <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                         </div>
                     </div>
