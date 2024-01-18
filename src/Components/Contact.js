@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { LKO_MAPS, MAIL } from '../Utils/constants'
+import Modal from './Modal'
 
 const Contact = () => {
+    const [openModal, setOpenModal] = useState(false);
+
+
     return (
         <div id='contact' className='contact'>
             <h4>CONTACT</h4>
@@ -22,10 +26,12 @@ const Contact = () => {
                     </span>
                     <div>
                         <h5>Mail</h5>
-                        <a href={MAIL} target="blank">akhileshyadav26620@gmail.com</a>
+                        {/* <a href={MAIL} target="blank">akhileshyadav26620@gmail.com</a> */}
+                        <p onClick={() => setOpenModal(true)} >akhileshyadav26620@gmail.com</p>
                     </div>
                 </div>
             </div>
+            <Modal open={openModal} onClose={() => setOpenModal(false)} />
         </div>
     )
 }
