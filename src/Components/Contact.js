@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { LKO_MAPS, MAIL } from '../Utils/constants'
+import { LKO_MAPS } from '../Utils/constants'
 import Modal from './Modal'
 
 const Contact = () => {
