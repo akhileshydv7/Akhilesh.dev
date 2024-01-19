@@ -1,8 +1,14 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import contactPhoto from '../Utils/Photos/img-01.webp';
+import { MAIL } from '../Utils/constants';
 
 const Modal = ({ open, onClose }) => {
     const form = useRef();
+
+    // const openMail = () => {
+    //     window.href = { MAIL };
+    // }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -13,21 +19,42 @@ const Modal = ({ open, onClose }) => {
             }, (error) => {
                 console.log(error.text);
             });
+        onClose();
     };
     if (!open) return null;
     return (
         <div onClick={onClose} className="overlay">
             <div onClick={(e) => { e.stopPropagation() }} className="modalContainer">
-                <form ref={form} onSubmit={sendEmail}>
-                    <label>Name</label>
-                    <input type="text" name="user_name" />
-                    <label>Email</label>
-                    <input type="email" name="user_email" />
-                    <label>Message</label>
-                    <textarea name="message" />
-                    <input type="submit" value="Send" />
-                </form>
-                <p onClick={onClose}>X</p>
+                <div className='img-div'>
+                    <a href={MAIL}>
+                        <img src={contactPhoto} alt='contactPhoto' />
+                    </a>
+                </div>
+                <div className='form-div'>
+                    <p onClick={onClose}><i className="fa-solid fa-x"></i></p>
+                    <h2>Get in touch</h2>
+                    <form ref={form} onSubmit={sendEmail}>
+                        <div className='input'>
+                            <input type="text" name="user_name" placeholder='Name' required />
+                            <span className='focus-input'></span>
+                            <span className="symbol-input">
+                                <i className="fa-solid fa-user"></i>
+                            </span>
+                        </div>
+                        <div className='input'>
+                            <input type="email" name="user_email" placeholder='Email' required />
+                            <span className='focus-input'></span>
+                            <span className="symbol-input">
+                                <i className="fa-solid fa-envelope"></i>
+                            </span>
+                        </div>
+                        <div className='textarea'>
+                            <textarea name="message" placeholder="Message" required />
+                            <span></span>
+                        </div>
+                        <input className='submit-button' type="submit" value="Send" />
+                    </form>
+                </div>
             </div>
         </div>
     )

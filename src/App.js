@@ -1,4 +1,3 @@
-// import './App.scss';
 import './App.scss';
 import About from './Components/About';
 import Contact from './Components/Contact';
