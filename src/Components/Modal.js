@@ -6,10 +6,6 @@ import { MAIL } from '../Utils/constants';
 const Modal = ({ open, onClose }) => {
     const form = useRef();
 
-    // const openMail = () => {
-    //     window.href = { MAIL };
-    // }
-
     const sendEmail = (e) => {
         e.preventDefault();
 

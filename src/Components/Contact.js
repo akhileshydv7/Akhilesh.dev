@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { LKO_MAPS } from '../Utils/constants'
+import { LKO_MAPS, MAIL } from '../Utils/constants'
 import Modal from './Modal'
 
 const Contact = () => {
@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <div id='contact' className='contact'>
             <h4>CONTACT</h4>
-            <h2>Don't be shy! Hit me up! 👇</h2>
+            <h2 className='contact-h2-child1'>Don't be shy! Hit me up! 👇</h2>
             <div className='contact-down-section'>
                 <div className='mail-pin'>
                     <span>
@@ -26,9 +26,16 @@ const Contact = () => {
                     </span>
                     <div>
                         <h5>Mail</h5>
-                        {/* <a href={MAIL} target="blank">akhileshyadav26620@gmail.com</a> */}
-                        <p onClick={() => setOpenModal(true)} >akhileshyadav26620@gmail.com</p>
+                        <a href={MAIL} target="blank">akhileshyadav26620@gmail.com</a>
+                        {/* <p  >akhileshyadav26620@gmail.com</p> */}
                     </div>
+                </div>
+            </div>
+            <div className="contact-form-div">
+                <div className='contact-form'>
+                    <h2>Get In Touch</h2>
+                    <p>Message me if you have any work opportunities or a cool project idea!</p>
+                    <button onClick={() => setOpenModal(true)}>Let's do this</button>
                 </div>
             </div>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />

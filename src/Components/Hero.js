@@ -1,5 +1,5 @@
 import { Github_LINK, Linkedin_LINK, wave_img } from '../Utils/constants';
-import profile from '../Utils/Photos/profile-pic.jpg';
+import profile from '../Utils/Photos/111.jpg';
 
 const Hero = () => {
     return (
