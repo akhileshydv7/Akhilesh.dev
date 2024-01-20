@@ -3,6 +3,7 @@ import { Github_LINK, Linkedin_LINK } from '../Utils/constants'
 
 const Footer = () => {
     return (
+
         <div className='footer'>
             <h3>Copyright © 2024. All rights are reserved</h3>
             <div className='social-menu'>

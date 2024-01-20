@@ -17,12 +17,12 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="project" spy={true} smooth={true} offset={10} duration={800}>
+                        <Link to="project" spy={true} smooth={true} offset={50} duration={800}>
                             Project
                         </Link>
                     </li>
                     <li>
-                        <Link to="contact" spy={true} smooth={true} offset={50} duration={1000}>
+                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={1000}>
                             Contact
                         </Link>
                     </li>
