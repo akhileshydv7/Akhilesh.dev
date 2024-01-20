@@ -18,7 +18,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link to="project" spy={true} smooth={true} offset={50} duration={800}>
-                            Project
+                            Projects
                         </Link>
                     </li>
                     <li>

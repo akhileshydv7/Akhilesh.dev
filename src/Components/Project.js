@@ -6,8 +6,10 @@ import { NetflixGPT_Code, NetflixGPT_Live, EatAndBite_Code, EatAndBite_Live } fr
 const Project = () => {
     return (
         <div id='project' className='project'>
-            <h4 className='project-header'>Portfolio</h4>
-            <h3 className='project-line'>Each project is a unique peice of development🧩</h3>
+            <div className="project-upper-part">
+                <h3 className='project-header'>Portfolio</h3>
+                <h3 className='project-line'>Each project is a unique peice of development🧩</h3>
+            </div>
             <div className='project'>
                 <div className='project-1'>
                     <img src={projectOne} alt='profile' />
