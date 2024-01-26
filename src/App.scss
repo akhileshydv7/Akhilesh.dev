@@ -19,9 +19,10 @@
     height: 80px;
     z-index: 40;
     position: fixed;
-    background-color: white;
     width: 100%;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
     h3{
         margin-left: 48px;
         cursor: pointer;
@@ -31,7 +32,7 @@
         font-weight: 600;
         margin-right: 60px;
         font-size: 17px;
-        color: rgb(34, 34, 34);
+        color: rgb(7, 7, 7);
         ul{
             display: flex;
             list-style: none;
@@ -40,7 +41,7 @@
         a{
             cursor: pointer;
             text-decoration: none;
-            color: rgb(50, 49, 49);
+            color: rgb(7,7,7);
             transition: color 0.5s;
         }
         a:hover{
@@ -59,13 +60,12 @@
 .hero{
     background-color: #f9f9f9;
     min-height: 100vh;
-    padding-top: 8rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 9rem;
 
     .left-section{
-        margin-top: 3rem;
         h1{
             font-size: 3.5rem;
             color: rgb(52, 51, 51);
@@ -124,7 +124,7 @@
         ul {
             display: flex;
             position: absolute;
-            top: 81%;
+            top: 78%;
             left: 17%;
             transform: translate(-50%, -50%);
           }
@@ -187,16 +187,29 @@
           ul li:nth-child(2) a:before{
             background: #dd4b39;
           }
+
+          @media screen and (min-width: 1920px) {
+            ul{
+              top: 67%;
+              left: 26%;
+            }
+          }
+          
     }
 
     .right-section{
-        margin-top: 1rem;
+        margin-top: 3rem;
         img {
           width: 350px;
           height: 350px;
           border-radius: 50%;
           }          
     }
+
+    @media screen and (min-width: 1920px) {
+      gap: 15rem;
+    }
+
 }
 
 
@@ -204,15 +217,74 @@
 
 
   
-  // .tech{
-  //   margin: 3.5rem 0 4rem 10rem ;
-  //   p{
-  //     font-size: 1.1rem;
-  //     font-weight: 500;
-  //     border-right: 2px solid gray;
-  //     width: 120px;
-  //   }
-  // }
+  .tech{
+    margin: 3.5rem 6rem 10rem 9rem ;
+    position: relative;
+    p{
+      position: absolute;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-right: 2px solid gray;
+      width: 120px;
+      top: 14px;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      list-style:none;
+      position: absolute;
+      margin-left: 12rem;
+
+      li{
+        margin-right: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        img{
+          width: 55px;
+          height: 55px;
+          border-radius: 12px;
+        }
+      }
+      li:nth-child(1){
+        img{
+          background-color: rgb(220, 66, 28);
+          width: 55px;
+          height: 55px; 
+        }
+      }
+      li:nth-child(2){
+        img{
+          background-color: #2461A8;
+          width: 55px;
+          height: 55px;
+        }
+      }
+      li:nth-child(4){
+        img{
+          padding: 6px;
+          background-color: #232222;
+          width: 55px;
+          height: 55px;
+        }
+      }
+      li:nth-child(6){
+        img{
+          padding: 4px;
+          background-color: #232222;
+          width: 55px;
+          height: 55px;
+        }
+      }
+
+      li:hover{
+        transform: translate(0, -10px);
+      }
+    }
+
+    @media screen and (min-width: 1920px) {
+      margin-left: 27.5rem;
+    }
+  }
   
 
 
@@ -224,15 +296,12 @@
 
 .about{  
     margin: 6.5rem 0 9rem 0 ;
-
 .about-down-secton{
   display: grid;
   grid-template-columns: 50% 50%;
-  // gap: 10px;
 }
 
 .about-left-section{
-  // width: 50%;
   img:nth-child(1) {
     height: 22rem;
     width: 25.5rem;
@@ -266,9 +335,22 @@
       transform: rotate(359deg);
     }
   }
+
+  @media screen and (min-width: 1920px) {
+    img:nth-child(1) {
+      left: 46%;
+    }
+    img:nth-child(2) {
+      margin-top: 14%;
+      left: 34.8%;
+    }
+    img:nth-child(3) {
+      left: 36.5%;
+      margin-top: 11%;
+    }
+  }
 }
 .about-right-section{
-  // width: 50%;
   h4{
     font-size: 17px;
     margin-top: 8%;
@@ -339,6 +421,7 @@
         align-items: center;
         p{
           width: 300px;
+          text-align: center;
         }
       }
       .project-1-tech{
@@ -399,6 +482,7 @@
         align-items: center;
         p{
           width: 300px;
+          text-align: center;
         }
       }
       .project-2-tech{
@@ -853,6 +937,15 @@
 }
 .social-menu ul li:nth-child(1) a:hover{
     background-color: #0077b5;
+}
+
+@media screen and (min-width: 1920px) {
+  .social-menu ul{
+    left: 74%;
+  }
+  h3{
+    padding-left: 27rem;
+  }
 }
 
 }
