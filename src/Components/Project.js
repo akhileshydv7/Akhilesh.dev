@@ -16,11 +16,10 @@ const Project = () => {
                     <div className='project-1-text-part'>
                         <h4>NetflixGPT🎬</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Ex aut molestiae sequi
-                            commodi consequuntur. Iste, accusamus prov
-                            ident sit, magnam quod velit eum consequun
-                            tempora laudantium fugiat aut.
+                            NetflixGPT website is an online platform
+                            that allows users to watch your perfect movies.
+                            It uses GPT api's which will recommend you
+                            movies as of your taste.
                         </p>
                         <div className='project-1-tech'>
                             <span>React</span>
@@ -36,11 +35,10 @@ const Project = () => {
                     <div className='project-2-text-part'>
                         <h4>Eat&Bite🍔</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Ex aut molestiae sequi
-                            commodi consequuntur. Iste, accusamus prov
-                            ident sit, magnam quod velit eum consequun
-                            tempora laudantium fugiat aut.
+                            Eat&Bite is a food ordering web-app
+                            which helps people to order their favourite
+                            food from their favourite Restraunts.
+                            It uses swiggy data for a seamless experience.
                         </p>
                         <div className='project-2-tech'>
                             <span>React</span>
