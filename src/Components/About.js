@@ -6,8 +6,8 @@ const About = () => {
             <div className='about-down-secton'>
                 <div className='about-left-section'>
                     <img src="https://www.stefantopalovic.com/static/media/about-img.62b47e7f183d4b4e9feb.webp" alt='laptopPhoto' />
-                    <img src="https://www.stefantopalovic.com/static/media/working-emoji.c5325f52b5be329995a5.png" alt='boyWithLaptop' />
-                    <img src="https://www.stefantopalovic.com/static/media/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg" alt='movingPhoto' />
+                    {/* <img src="https://www.stefantopalovic.com/static/media/working-emoji.c5325f52b5be329995a5.png" alt='boyWithLaptop' />
+                    <img src="https://www.stefantopalovic.com/static/media/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg" alt='movingPhoto' /> */}
                 </div>
                 <div className='about-right-section'>
                     <h4>ABOUT ME</h4>

@@ -12,14 +12,13 @@ const Hero = () => {
                 <div className='social-links'>
                     <ul>
                         <li>
-                            {/* <a href="https://drive.google.com/file/d/1LRMtA971hRDdj-8q5qv7ot1DbQcgTMIF/view?google_abuse=GOOGLE_ABUSE_EXEMPTION%3DID%3Df1ccee7ec93eb18d:TM%3D1705401885:C%3Dr:IP%3D2409:40e3:103d:94d2:d175:48a3:41e1:e64a-:S%3DLwwmOiTNkTcV2zyUbAjdXdM%3B+path%3D/%3B+domain%3Dgoogle.com%3B+expires%3DTue,+16-Jan-2024+13:44:45+GMT" target="blank"> */}
                             <a href={Linkedin_LINK} target="blank">
-                                <i className="fab fa-linkedin-in icon"></i>
+                                <i className="fab fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li>
                             <a href={Github_LINK} target="blank">
-                                <i className="fab fa-github icon"></i>
+                                <i className="fab fa-github"></i>
                             </a>
                         </li>
                     </ul>

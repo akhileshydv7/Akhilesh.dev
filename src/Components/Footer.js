@@ -7,7 +7,6 @@ const Footer = () => {
         <div className='footer'>
             <h3>Copyright © 2024. All rights are reserved</h3>
             <div className='social-menu'>
-
                 <ul>
                     <li>
                         <a href={Linkedin_LINK} target="blank">
