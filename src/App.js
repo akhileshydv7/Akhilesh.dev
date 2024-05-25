@@ -9,7 +9,7 @@ import Tech from './Components/Tech';
 
 function App() {
   return (
-    <div className='container'>
+    <div>
       <Header />
       <Hero />
       <Tech />

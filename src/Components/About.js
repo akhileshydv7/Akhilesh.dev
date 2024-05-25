@@ -11,12 +11,12 @@ const About = () => {
                 </div>
                 <div className='about-right-section'>
                     <h4>ABOUT ME</h4>
-                    <h2>Front-end Developer based in Lucknow, India 📍</h2>
+                    <h2>Full Stack Developer based in Lucknow, India 📍</h2>
                     <p>
-                        Hey, my name is Akhilesh, and I'm a Frontend Developer. My passion is to create and develop a clean UI/UX.
+                        Hey, my name is Akhilesh, and I'm a Full Stack Developer. My passion is to create and develop a clean website.
                     </p>
                     <p>
-                        My main stack currently is React.js in combination with Tailwind CSS and Redux.
+                        My main stack currently is MERN in combination with Tailwind CSS and Redux.
                     </p>
                 </div>
             </div>

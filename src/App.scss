@@ -9,11 +9,6 @@
 
 
 
-.container{
-  margin: auto;
-}
-
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -65,7 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 9rem;
+    gap: 5rem;
 
     .left-section{
         h1{
@@ -130,7 +125,7 @@
          
           ul li{
              list-style: none;
-             margin: 8px 12px 0 0 ;
+             margin: 12px 12px 0 0 ;
          }
          
           ul li .fab{
@@ -882,8 +877,8 @@
   }
   .social-menu{
     padding-top: 2rem !important;
-    padding-left: 10%;
-     ul{
+    ul{
+      margin-left: 40%;
       transform: translate(-50%, -50%);
       display: flex;
   }

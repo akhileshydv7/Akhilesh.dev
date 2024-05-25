@@ -5,9 +5,9 @@ const Hero = () => {
     return (
         <div id="hero" className="hero">
             <div className="left-section">
-                <h1 className='h1'>Front-End React</h1>
+                <h1 className='h1'>Full Stack MERN</h1>
                 <h1 className='h2'>Developer <span><img src={wave_img} alt='hand-wave' /></span></h1>
-                <p>Hi, I'm Akhilesh Yadav. A passionate Front-end React</p>
+                <p>Hi, I'm Akhilesh Yadav. A passionate Full Stack MERN</p>
                 <p>Developer based in Lucknow, India. 📍</p>
                 <div className='social-links'>
                     <ul>
